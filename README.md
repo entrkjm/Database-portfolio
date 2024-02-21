@@ -1,4 +1,4 @@
-# Python Data Structures and Algorithms
+# Database study and projects portfolio
 **This repository and its directories include my personal study materials and exercies porfolios for database(mainly SQL)**
 
 The aim of this potfolio is to organize and acculumate useful exercises and articles about database.
