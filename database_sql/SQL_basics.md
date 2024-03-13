@@ -2,14 +2,14 @@
 This markdown file is to archive SQL questions for practice.
 
 ## Basic Schema for Practice Questions
-![image](/Database-portfolio/database_sql/images/schema.png)
+![image](/database_sql/images/schema.png)
 
 ---
-### Question 1
+## Question 1
 
-***Show first name, last name, and gender of patients whose gender is 'M'***
+### ***Show first name, last name, and gender of patients whose gender is 'M'***
 
-#### Answer
+## Answer
 ```
 SELECT 
   first_name,
@@ -18,8 +18,9 @@ SELECT
 FROM patients
 WHERE gender = 'M'
 ```
-### Result
-![image](/Database-portfolio/database_sql/images/schema.png)
+## Result
+![image](/database_sql/images/result1.png)
+
 
 ---
 
