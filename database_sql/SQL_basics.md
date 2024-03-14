@@ -32,10 +32,45 @@ SELECT
   first_name,
   last_name
 FROM patients
-WHERE allergies is null
+WHERE allergies IS null
 ```
 ## Result
-![image](/database_sql/images/result1.png)
+![image](/database_sql/images/result2.png)
+
+---
+## Question 3
+
+### ***Show first name of patients that start with the letter 'C'***
+
+## Answer
+```
+SELECT
+	first_name 
+FROM 
+	patients
+WHERE 
+	first_name Like 'C%'
+```
+## Result
+![image](/database_sql/images/result3.png)
+
+---
+## Question 4
+
+### ***Show first name and last name of patients that weight within the range of 100 to 120 (inclusive)***
+
+## Answer
+```
+SELECT 
+	first_name, last_name
+FROM 
+	patients
+WHERE
+	weight >= 100 and weight <= 120
+```
+## Result
+![image](/database_sql/images/result4.png)
+
 
 ---
 # Reference
