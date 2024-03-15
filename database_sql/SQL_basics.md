@@ -2,8 +2,13 @@
 This markdown file is to archive SQL questions for practice.
 
 ## Index
-[Question1](/database_sql/SQL_basics.md#question-1)
-
+- **[Question1](/database_sql/SQL_basics.md#question-1)**
+- **[Question2](/database_sql/SQL_basics.md#question-2)**
+- **[Question3](/database_sql/SQL_basics.md#question-3)**
+- **[Question4](/database_sql/SQL_basics.md#question-4)**
+- **[Question5](/database_sql/SQL_basics.md#question-5)**
+- **[Question6](/database_sql/SQL_basics.md#question-6)**
+- **[Question7](/database_sql/SQL_basics.md#question-7)**
 
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
@@ -107,14 +112,18 @@ FROM patients
 ## Answer
 ```
 SELECT
-  CONCAT(first_name, ' ',last_name) AS full_name
-FROM patients
+    first_name, 
+    last_name, 
+    province_name
+
+From patients
+    JOIN province_names on province_names.province_id = patients.province_id
 ```
 
 
 
 ## Result
-![image](/database_sql/images/result6.png)
+![image](/database_sql/images/result7.png)
 
 
 
