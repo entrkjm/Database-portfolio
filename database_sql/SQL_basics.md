@@ -2,7 +2,7 @@
 This markdown file is to archive SQL questions for practice.
 
 ## Index
-[Question1](/#question-1)
+[Question1](/database_sql/SQL_basics.md#question-1)
 
 
 ## Basic Schema for Practice Questions
