@@ -1,6 +1,10 @@
 # SQL Practice Questions
 This markdown file is to archive SQL questions for practice.
 
+## Index
+[Question1](/#question-1)
+
+
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
 
@@ -94,6 +98,21 @@ SELECT
   CONCAT(first_name, ' ',last_name) AS full_name
 FROM patients
 ```
+---
+## Question 7
+
+### ***Show first name, last name, and the full province name of each patient.***
+### *** Example: 'Ontario' instead of 'ON'***
+
+## Answer
+```
+SELECT
+  CONCAT(first_name, ' ',last_name) AS full_name
+FROM patients
+```
+
+
+
 ## Result
 ![image](/database_sql/images/result6.png)
 
