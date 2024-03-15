@@ -9,6 +9,8 @@ This markdown file is to archive SQL questions for practice.
 - **[Question5](/database_sql/SQL_basics.md#question-5)**
 - **[Question6](/database_sql/SQL_basics.md#question-6)**
 - **[Question7](/database_sql/SQL_basics.md#question-7)**
+- **[Question8](/database_sql/SQL_basics.md#question-7)**
+
 
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
@@ -119,13 +121,20 @@ SELECT
 From patients
     JOIN province_names on province_names.province_id = patients.province_id
 ```
+---
+## Question 8
 
+### ***Show how many patients have a birth_date with 2010 as the birth year.***
 
+## Answer
+```
+SELECT COUNT (patient_id) AS Born_in_2010
+FROM patients
+WHERE YEAR(birth_date) = 2010
+```
 
 ## Result
-![image](/database_sql/images/result7.png)
-
-
+![image](/database_sql/images/result8.png)
 
 
 ---
