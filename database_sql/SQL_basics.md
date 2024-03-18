@@ -9,7 +9,11 @@ This markdown file is to archive SQL questions for practice.
 - **[Question5](/database_sql/SQL_basics.md#question-5)**
 - **[Question6](/database_sql/SQL_basics.md#question-6)**
 - **[Question7](/database_sql/SQL_basics.md#question-7)**
-- **[Question8](/database_sql/SQL_basics.md#question-7)**
+- **[Question8](/database_sql/SQL_basics.md#question-8)**
+- **[Question9](/database_sql/SQL_basics.md#question-9)**
+- **[Question10](/database_sql/SQL_basics.md#question-10)**
+- **[Question11](/database_sql/SQL_basics.md#question-11)** 
+- **[Question12](/database_sql/SQL_basics.md#question-12)** 
 
 
 ## Basic Schema for Practice Questions
@@ -93,6 +97,8 @@ UPDATE patients
 SET allergies = 'NKA'
 WHERE allergies IS NULL
 ```
+## Result
+![image](/database_sql/images/result5.png)
 
 ---
 ## Question 6
@@ -105,6 +111,9 @@ SELECT
   CONCAT(first_name, ' ',last_name) AS full_name
 FROM patients
 ```
+## Result
+![image](/database_sql/images/result6.png)
+
 ---
 ## Question 7
 
@@ -121,6 +130,9 @@ SELECT
 From patients
     JOIN province_names on province_names.province_id = patients.province_id
 ```
+## Result
+![image](/database_sql/images/result7.png)
+
 ---
 ## Question 8
 
@@ -132,9 +144,62 @@ SELECT COUNT (patient_id) AS Born_in_2010
 FROM patients
 WHERE YEAR(birth_date) = 2010
 ```
-
 ## Result
 ![image](/database_sql/images/result8.png)
+
+---
+## Question 9
+
+### ***Show the first_name, last_name, and height of the patient with the greatest height.***
+
+## Answer
+```
+SELECT first_name, last_name, MAX(height) as height
+FROM patients
+```
+## Result
+![image](/database_sql/images/result9.png)
+
+---
+## Question 10
+
+### ***Show the total number of admissions***
+
+## Answer
+```
+SELECT COUNT(*) AS total_admissions
+FROM admissions
+```
+## Result
+![image](/database_sql/images/result10.png)
+
+---
+## Question 11
+
+### ***Show all the columns from admissions where the patient was admitted and discharged on the same day.***
+
+## Answer
+```
+SELECT *
+FROM admissions
+WHERE admission_date = discharge_date
+```
+## Result
+![image](/database_sql/images/result11.png)
+
+---
+## Question 12
+
+### ***Show the patient id and the total number of admissions for patient_id 579.***
+
+## Answer
+```
+SELECT patient_id, COUNT(patient_id) AS total_admissions
+FROM admissions
+WHERE patient_id = 579
+```
+## Result
+![image](/database_sql/images/result12.png)
 
 
 ---
