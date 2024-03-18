@@ -14,8 +14,10 @@ This markdown file is to archive SQL questions for practice.
 - **[Question10](/database_sql/SQL_basics.md#question-10)**
 - **[Question11](/database_sql/SQL_basics.md#question-11)** 
 - **[Question12](/database_sql/SQL_basics.md#question-12)** 
-
-
+- **[Question13](/database_sql/SQL_basics.md#question-13)** 
+- **[Question14](/database_sql/SQL_basics.md#question-14)**
+- **[Question15](/database_sql/SQL_basics.md#question-15)**
+  
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
 
@@ -97,8 +99,6 @@ UPDATE patients
 SET allergies = 'NKA'
 WHERE allergies IS NULL
 ```
-## Result
-![image](/database_sql/images/result5.png)
 
 ---
 ## Question 6
@@ -118,7 +118,7 @@ FROM patients
 ## Question 7
 
 ### ***Show first name, last name, and the full province name of each patient.***
-### *** Example: 'Ontario' instead of 'ON'***
+### ***Example: 'Ontario' instead of 'ON'***
 
 ## Answer
 ```
@@ -200,6 +200,48 @@ WHERE patient_id = 579
 ```
 ## Result
 ![image](/database_sql/images/result12.png)
+
+---
+## Question 13
+
+### ***Based on the cities that our patients live in, show unique cities that are in province_id 'NS'?***
+
+## Answer
+```
+SELECT DISTINCT(city) AS unique_cities
+From patients
+WHERE province_id = 'NS'
+```
+## Result
+![image](/database_sql/images/result13.png)
+
+## Question 14
+
+### ***Write a query to find the first_name, last name and birth date of patients who has height greater than 160 and weight greater than 70***
+
+## Answer
+```
+SELECT first_name, last_name, birth_date
+From patients
+WHERE weight > 70 AND height > 160
+```
+## Result
+![image](/database_sql/images/result14.png)
+
+## Question 15
+
+### ***Write a query to find list of patients first_name, last_name, and allergies where allergies are not null and are from the city of 'Hamilton'***
+
+## Answer
+```
+SELECT first_name, last_name, allergies
+From Patients
+WHERE 
+  allergies is NOT NULL AND city = 'Hamilton'
+```
+## Result
+![image](/database_sql/images/result15.png)
+
 
 
 ---
