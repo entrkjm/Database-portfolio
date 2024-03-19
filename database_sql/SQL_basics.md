@@ -17,7 +17,12 @@ This markdown file is to archive SQL questions for practice.
 - **[Question13](/database_sql/SQL_basics.md#question-13)** 
 - **[Question14](/database_sql/SQL_basics.md#question-14)**
 - **[Question15](/database_sql/SQL_basics.md#question-15)**
-  
+- **[Question16](/database_sql/SQL_basics.md#question-16)**
+- **[Question17](/database_sql/SQL_basics.md#question-17)**
+- **[Question18](/database_sql/SQL_basics.md#question-18)**
+- **[Question18](/database_sql/SQL_basics.md#question-19)**
+
+
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
 
@@ -242,6 +247,62 @@ WHERE
 ## Result
 ![image](/database_sql/images/result15.png)
 
+## Question 16
+
+### ***Show unique birth years from patients and order them by ascending.***
+
+## Answer
+```
+SELECT DISTINCT(YEAR(birth_date)) AS birth_year
+FROM patients
+ORDER BY birth_year
+```
+## Result
+![image](/database_sql/images/result16.png)
+
+## Question 17
+
+### ***Show unique first names from the patients table which only occurs once in the list.***
+### ***For example, if two or more people are named 'John' in the first_name column then don't include their name in the output list. If only 1 person is named 'Leo' then include them in the output.***
+
+## Answer
+```
+SELECT first_name
+FROM patients
+GROUP BY first_name
+HAVING COUNT(first_name) = 1
+```
+## Result
+![image](/database_sql/images/result17.png)
+
+## Question 18
+
+### ***Show patient_id and first_name from patients where their first_name start and ends with 's' and is at least 6 characters long.***
+
+## Answer
+```
+SELECT patient_id, first_name
+FROM patients
+WHERE first_name LIKE 's%s' AND Len(first_name) >= 6
+```
+## Result
+![image](/database_sql/images/result18.png)
+
+## Question 19
+
+### ***Show patient_id, first_name, last_name from patients whos diagnosis is 'Dementia'.***
+### ***Primary diagnosis is stored in the admissions table.***
+
+## Answer
+```
+SELECT patients.patient_id, first_name, last_name
+FROM patients 
+  JOIN admissions on admissions.patient_id = patients.patient_id 
+WHERE diagnosis = 'Dementia'
+
+```
+## Result
+![image](/database_sql/images/result19.png)
 
 
 ---
