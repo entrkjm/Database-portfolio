@@ -21,7 +21,7 @@ This markdown file is to archive SQL questions for practice.
 - **[Question17](/database_sql/SQL_basics.md#question-17)**
 - **[Question18](/database_sql/SQL_basics.md#question-18)**
 - **[Question18](/database_sql/SQL_basics.md#question-19)**
-
+- **[Question18](/database_sql/SQL_basics.md#question-20)**
 
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
@@ -303,6 +303,22 @@ WHERE diagnosis = 'Dementia'
 ```
 ## Result
 ![image](/database_sql/images/result19.png)
+
+## Question 20
+
+### ***Display every patient's first_name.***
+### ***Order the list by the length of each name and then by alphabetically.***
+
+## Answer
+```
+SELECT first_name 
+FROM patients
+ORDER BY len(first_name), first_name
+
+```
+## Result
+![image](/database_sql/images/result20.png)
+
 
 
 ---
