@@ -20,8 +20,8 @@ This markdown file is to archive SQL questions for practice.
 - **[Question16](/database_sql/SQL_basics.md#question-16)**
 - **[Question17](/database_sql/SQL_basics.md#question-17)**
 - **[Question18](/database_sql/SQL_basics.md#question-18)**
-- **[Question18](/database_sql/SQL_basics.md#question-19)**
-- **[Question18](/database_sql/SQL_basics.md#question-20)**
+- **[Question19](/database_sql/SQL_basics.md#question-19)**
+- **[Question20](/database_sql/SQL_basics.md#question-20)**
 
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
