@@ -12,8 +12,8 @@ As of now, the repository contains 3 main directories: [**Bookmarks**](bookmarks
 ### Database exercises with SQL practice
 Questions and exercises for each data structure category with its sub-directory
 
-1. [Database with SQL](database_sql/SQL_basics.md)
-
+1. [SQL Basics](database_sql/SQL_basics.md)
+2. [SQL Command Practice](database_sql/SQL_practice.md)
 
 
 ## Things need to be done
