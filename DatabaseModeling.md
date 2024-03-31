@@ -2,7 +2,11 @@
 This document is to organize key concepts of database modeling 
 
 # 0. Index
-
+- **[1. Data modeling key features](/DatabaseModeling.md#three-key-elements-of-data-model)**
+- **[2. Process of database design](/DatabaseModeling.md#process-of-database-design)**
+- **[3. E-R data model](/DatabaseModeling.md#e-r-data-model)**
+- **[4. Logical data modeling](/DatabaseModeling.md#logical-data-modeling(examples))**
+ 
 # 1. Three key elements of data model
 1. Data structure
 2. Operations
@@ -15,7 +19,7 @@ This document is to organize key concepts of database modeling
 4. Physical design
 5. Implementation
 
-![image](----/Isolated.png)
+![image](/images/datamodelingprocess.avif)
 
 
 ## Conceptual design
@@ -40,17 +44,17 @@ The ER data model specifies enterprise schema that represents the overall logica
 - Attribute
 - Relationship
 
-![image](----/Isolated.png)
+![image](/imgaes/ER_diagram.png)
 
 # 4. Logical data modeling(Examples)
 - Relational data model
-![image](----/Isolated.png)
+![image](----/Object-Oriented-DB.png)
   
 - Hierarchical data model
-![image](----/Isolated.png)
+![image](----/Hierarchical-DB.png)
   
 - Network data model
-![image](----/Isolated.png)
+![image](----/Network-DB.png)
 
 
 # Reference
