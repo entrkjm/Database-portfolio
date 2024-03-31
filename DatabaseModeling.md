@@ -2,10 +2,10 @@
 This document is to organize key concepts of database modeling 
 
 # 0. Index
-- **[1. Data modeling key features](/DatabaseModeling.md#three-key-elements-of-data-model)**
-- **[2. Process of database design](/DatabaseModeling.md#process-of-database-design)**
-- **[3. E-R data model](/DatabaseModeling.md#e-r-data-model)**
-- **[4. Logical data modeling](/DatabaseModeling.md#logical-data-modeling(examples))**
+- **[1. Data modeling key features](/DatabaseModeling.md#1-three-key-elements-of-data-model)**
+- **[2. Process of database design](/DatabaseModeling.md#2-process-of-database-design)**
+- **[3. E-R data model](/DatabaseModeling.md#3-e-r-data-model)**
+- **[4. Logical data modeling](/DatabaseModeling.md#4-logical-data-modeling(examples))**
  
 # 1. Three key elements of data model
 1. Data structure
