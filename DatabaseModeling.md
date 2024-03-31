@@ -19,7 +19,7 @@ This document is to organize key concepts of database modeling
 4. Physical design
 5. Implementation
 
-![image](/images/datamodelingprocess.avif)
+![image](images/datamodelingprocess.png)
 
 
 ## Conceptual design
@@ -44,17 +44,17 @@ The ER data model specifies enterprise schema that represents the overall logica
 - Attribute
 - Relationship
 
-![image](/imgaes/ER_diagram.png)
+![image](imgaes/ER_diagram.png)
 
 # 4. Logical data modeling(Examples)
 - Relational data model
-![image](----/Object-Oriented-DB.png)
+![image](images/Object-Oriented-DB.png)
   
 - Hierarchical data model
-![image](----/Hierarchical-DB.png)
+![image](images/Hierarchical-DB.png)
   
 - Network data model
-![image](----/Network-DB.png)
+![image](images/Network-DB.png)
 
 
 # Reference
