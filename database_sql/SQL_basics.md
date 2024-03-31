@@ -22,6 +22,7 @@ This markdown file is to archive SQL questions for practice.
 - **[Question18](/database_sql/SQL_basics.md#question-18)**
 - **[Question19](/database_sql/SQL_basics.md#question-19)**
 - **[Question20](/database_sql/SQL_basics.md#question-20)**
+- **[Question21](/database_sql/SQL_basics.md#question-21)**
 
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
@@ -319,6 +320,18 @@ ORDER BY len(first_name), first_name
 ## Result
 ![image](/database_sql/images/result20.png)
 
+## Question 21
+
+### ***Show the province_id(s), sum of height; where the total sum of its patient's height is greater than or equal to 7,000.***
+
+## Answer
+```
+SELECT province_id, SUM(height) AS height_sum
+FROM patients
+GROUP BY province_id HAVING height_sum >= 7000;
+```
+## Result
+![image](/database_sql/images/result21.png)
 
 
 ---
