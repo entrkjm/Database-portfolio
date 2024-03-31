@@ -44,16 +44,16 @@ The ER data model specifies enterprise schema that represents the overall logica
 - Attribute
 - Relationship
 
-![image](imgaes/ER_diagram.png)
+![image](images/ER_diagram.png)
 
 # 4. Logical data modeling(Examples)
-- Relational data model
+- ## Relational data model
 ![image](images/Object-Oriented-DB.png)
   
-- Hierarchical data model
+- ## Hierarchical data model
 ![image](images/Hierarchical-DB.png)
   
-- Network data model
+- ## Network data model
 ![image](images/Network-DB.png)
 
 
