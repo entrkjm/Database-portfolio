@@ -23,6 +23,7 @@ This markdown file is to archive SQL questions for practice.
 - **[Question19](/database_sql/SQL_basics.md#question-19)**
 - **[Question20](/database_sql/SQL_basics.md#question-20)**
 - **[Question21](/database_sql/SQL_basics.md#question-21)**
+- **[Question22](/database_sql/SQL_basics.md#question-22)**
 
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
@@ -332,6 +333,19 @@ GROUP BY province_id HAVING height_sum >= 7000;
 ```
 ## Result
 ![image](/database_sql/images/result21.png)
+
+## Question 22
+
+### ***Show the difference between the largest weight and smallest weight for patients with the last name 'Maroni'***
+
+## Answer
+```
+SELECT (MAX(weight) - MIN(weight)) AS difference
+FROM patients
+WHERE last_name = 'Maroni'
+```
+## Result
+![image](/database_sql/images/result22.png)
 
 
 ---
