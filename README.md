@@ -13,8 +13,9 @@ As of now, the repository contains 3 main directories: [**Bookmarks**](bookmarks
 ### This repository covers data modeling, types of data model, relational database and SQL operations.
 
 1. [Database modeling](DatabaseModeling.md)
-2. [SQL Basics](database_sql/SQL_basics.md)
-3. [SQL Command Practice](database_sql/SQL_practice.md)
+2. [Relational Database](RelationalDataBase.md)
+3. [SQL Basics](database_sql/SQL_basics.md)
+4. [SQL Command Practice](database_sql/SQL_practice.md)
 
 
 ## To do list
