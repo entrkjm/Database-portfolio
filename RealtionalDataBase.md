@@ -30,7 +30,7 @@ This document is to understand and organize key concepts of RDB
 - Alternate Key: Candidate keys that are not chosen as primary key.
 - Foreign key: Keys combine to two different relations. It should be a primary key in one of the relations and referenced.
 
-![image](images/primary_alternative_keys)
+![image](images/primary_alternative_keys.png)
 
 **3. Constraints**
 - Entity integrity: Primary keys must not have NULL value.
