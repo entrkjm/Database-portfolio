@@ -24,6 +24,7 @@ This markdown file is to archive SQL questions for practice.
 - **[Question20](/database_sql/SQL_basics.md#question-20)**
 - **[Question21](/database_sql/SQL_basics.md#question-21)**
 - **[Question22](/database_sql/SQL_basics.md#question-22)**
+- **[Question22](/database_sql/SQL_basics.md#question-23)**
 
 ## Basic Schema for Practice Questions
 ![image](/database_sql/images/schema.png)
@@ -347,6 +348,19 @@ WHERE last_name = 'Maroni'
 ## Result
 ![image](/database_sql/images/result22.png)
 
+## Question 23
+
+### ***Show all of the days of the month (1-31) and how many admission_dates occurred on that day. Sort by the day with most admissions to least admissions.***
+
+## Answer
+```
+SELECT DAY(admission_date) AS days, COUNT(*) AS num_admissions
+FROM admissions
+GROUP BY days
+ORDER BY num_admissions DESC
+```
+## Result
+![image](/database_sql/images/result23.png)
 
 ---
 # Reference
